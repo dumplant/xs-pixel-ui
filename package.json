@@ -1,10 +1,17 @@
 {
   "name": "xs-pixel-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "pixel style ui",
   "main": "dist/index.umd.js",
-  "keywords": ["pixel-ui","pixel","vue","ui"],
-  "author": {"name":"zzz1024"},
+  "keywords": [
+    "pixel-ui",
+    "pixel",
+    "vue",
+    "ui"
+  ],
+  "author": {
+    "name": "zzz1024"
+  },
   "files": [
     "dist",
     "components"
