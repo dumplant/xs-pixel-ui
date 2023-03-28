@@ -1,15 +1,17 @@
 <template>
-  <div class="base-card" :style="width? {width: width + 'px'} : {}">
+  <div class="base-card" :style="width ? { width: width + 'px' } : {}">
     <div class="base-card-img" :style="imgHeight ? { height: imgHeight + 'px' } : {}">
       <img :src="imgSrc" alt="img">
     </div>
     <div v-if="summary" class="base-card-summary">
-      {{summary}}
+      {{ summary }}
     </div>
     <div v-else class="base-card-summary">
       <slot></slot>
     </div>
-    <slot name="footer"></slot>
+    <div class="base-card-footer">
+      <slot name="footer"></slot>
+    </div>
   </div>
 </template>
 
@@ -27,7 +29,7 @@ export default {
       default: '',
     },
     imgHeight: { // 卡片高度
-      type: Number, 
+      type: Number,
       default: 0,
     },
     summary: { // 卡片概要

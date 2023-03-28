@@ -1,14 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import '../components/css/demo.scss'
-import "../components/css/card.scss";
+import "../components/css/index.scss";
+import API from '../components/lib/index.js';
 
-import BaseDemo from '../components/lib/demo/index.js'
-import BaseCard from "../components/lib/card/index.js";
-
-Vue.use(BaseDemo)
-Vue.use(BaseCard)
+Vue.use(API)
 
 Vue.config.productionTip = false
 

@@ -17,9 +17,9 @@ import PUI from 'xs-pixel-ui';
 Vue.use(PUI);
 
 //按需引用
-import 'xs-pixel-ui/dist/css/demo.css';
-import {BaseDemo} from 'xs-pixel-ui';
-Vue.use(BaseDemo)
+import 'xs-pixel-ui/dist/css/button.css';
+import {PixelButton} from 'xs-pixel-ui';
+Vue.use(PixelButton)
 
 ```
 

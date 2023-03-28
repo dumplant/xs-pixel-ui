@@ -1,8 +1,9 @@
-import BaseDemo from "./demo";
 import BaseCard from "./card";
+import PixelButton from "./button";
+
 const components = {
-  BaseDemo,
   BaseCard,
+  PixelButton
 };
 const install = function (Vue) {
   if (install.installed) {
@@ -14,7 +15,7 @@ const install = function (Vue) {
 };
 
 const API = {
-  install,
+  install
 };
 
 export default API;
