@@ -21,7 +21,11 @@
     "build": "npm run build:js && npm run build:css",
     "lint": "vue-cli-service lint",
     "build:js": "webpack --config ./webpack.component.js",
-    "build:css": "npx gulp sass"
+    "build:css": "npx gulp sass",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.2"
   },
   "dependencies": {
     "core-js": "^3.8.3",

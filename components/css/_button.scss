@@ -21,13 +21,8 @@
     }
 }
 
-// .p-button {
-//     background-color: $primary;
-//     @include btn();
-// }
 
-@each $key,
-$val in $colors {
+@each $key, $val in $colors {
     .p-btn-#{$key} {
         @include btn($val);
         @include border($black);
