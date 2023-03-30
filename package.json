@@ -24,7 +24,8 @@
     "build:css": "npx gulp sass",
     "preinstall": "npx force-resolutions",
     "docs:dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
-    "docs:build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs"
+    "docs:build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
   "resolutions": {
     "graceful-fs": "4.2.2"
