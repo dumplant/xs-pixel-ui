@@ -1,3 +1,5 @@
+@import '../base';
+@import '../variables';
 .base-card {
     width: 270px;
     @include border($black);
@@ -21,9 +23,10 @@
         font-size: $base-font-size;
     }
 
-    &-footer {
+    &-text {
         padding: 8px;
         text-align: left;
         font-size: $font-size-sm;
+        line-height: $base-font-size;
     }
 }

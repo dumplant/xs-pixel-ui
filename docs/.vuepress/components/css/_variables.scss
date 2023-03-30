@@ -1,0 +1,61 @@
+// theme colors
+$default: #efefef;
+$primary: #5c8ffd;
+$secondary: #1ac888;
+$error: #d32752;
+$info: #f6c31c;
+$white: white;
+$black: black;
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+// color palette
+$colors: (
+    "default": $default,
+    "primary": $primary,
+    "secondary": $secondary,
+    "error":$error,
+    "info":$info,
+    "light": #f8f9fa,
+    "dark": #343a40,
+    "gray-100": #f8f9fa,
+    "gray-200": #e9ecef,
+    "gray-300": #dee2e6,
+    "gray-400": #ced4da,
+    "gray-500": #adb5bd,
+    "gray-600": #6c757d,
+    "gray-700": #495057,
+    "gray-800": #343a40,
+    "gray-900": #212529,
+    "custom-color-1": #8cc63e,
+    "custom-color-2": #ff6347,
+    "custom-color-3": #9370db,
+    "custom-color-4": #00ced1,
+    "custom-color-5": #ffd700
+);
+
+// borders
+@import "sass-encodeuri";
+@function border-image-svg($border-color) {
+    $border-image-svg: '<svg width="90" height="90" xmlns="http://www.w3.org/2000/svg"><g><title>pixel 1</title><rect stroke="'+$border-color +'" id="svg_2" height="30" width="30" y="30" x="0" fill="'+$border-color +'" /><rect stroke="'+$border-color +'" id="svg_3" height="30" width="30" y="0" x="30" fill="'+$border-color +'" /><rect stroke="'+$border-color +'" id="svg_4" height="30" width="30" y="30" x="60" fill="'+$border-color +'" /><rect stroke="'+$border-color +'" id="svg_5" height="30" width="30" y="60" x="30" fill="'+$border-color +'" /></g></svg>';
+    @return $border-image-svg;
+}
+
+// $border-image-url: svg-url(border-image-svg(#fff));
+$base-border-thickness: 3px;
+
+// $base-border-image: $border-image-url 30 stretch;
+@mixin border($color) {
+    border-style: solid;
+    border-width: $base-border-thickness;
+    border-image: svg-url(border-image-svg($color)) 30 stretch;
+    border-image-outset: 1;
+}

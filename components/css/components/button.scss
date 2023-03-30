@@ -1,7 +1,10 @@
+@import '../base';
+@import '../variables';
 @mixin btn($bg-color) {
     display: inline-block;
     cursor: pointer;
     position: relative;
+    color: $black;
     padding: 0.3rem 0.4rem;
     background-color: $bg-color;
     min-width: 7rem;
