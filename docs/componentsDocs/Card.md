@@ -1,7 +1,7 @@
 # Card
 Card component
 ### example
-<p-card imgSrc="/demo.png" summary="summary">
+<p-card imgSrc="/xs-pixel-ui/demo.png" summary="summary">
   <template v-slot:text>
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, repellat.
   </template>
