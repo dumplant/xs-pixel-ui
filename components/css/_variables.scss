@@ -43,7 +43,7 @@ $colors: (
 );
 
 // borders
-
+@import "sass-encodeuri";
 @function border-image-svg($border-color) {
     $border-image-svg:'<svg width="90" height="90" xmlns="http://www.w3.org/2000/svg"><g><title>pixel 1</title><rect stroke="' + $border-color + '" id="svg_2" height="30" width="30" y="30" x="0" fill="' + $border-color + '" /><rect stroke="' + $border-color + '" id="svg_3" height="30" width="30" y="0" x="30" fill="' + $border-color + '" /><rect stroke="' + $border-color + '" id="svg_4" height="30" width="30" y="30" x="60" fill="' + $border-color + '" /><rect stroke="' + $border-color + '" id="svg_5" height="30" width="30" y="60" x="30" fill="' + $border-color + '" /></g></svg>';
     @return $border-image-svg;
