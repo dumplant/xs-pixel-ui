@@ -1,7 +1,7 @@
-import BaseCard from "./src/main.vue";
+import PixelCard from "./src/main.vue";
 
-BaseCard.install = function (Vue) {
-  Vue.component(BaseCard.name, BaseCard);
+PixelCard.install = function (Vue) {
+  Vue.component(PixelCard.name, PixelCard);
 };
 
-export default BaseCard;
+export default PixelCard;
