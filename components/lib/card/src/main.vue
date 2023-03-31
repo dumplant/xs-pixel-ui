@@ -18,7 +18,7 @@
 <script>
 
 export default {
-  name: 'base-card',
+  name: 'p-card',
   props: {
     width: { // 图片宽度
       type: Number,
