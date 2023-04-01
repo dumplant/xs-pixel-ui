@@ -3,11 +3,15 @@
     <p-button>Hello</p-button>
     <p-button type="primary" >Hello</p-button>
     <p-button type="primary" hasOutline>Hello</p-button>
-    <base-card>summary
+    <p-card>summary
       <template v-slot:text>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, repellat.
       </template>
-    </base-card>
+    </p-card>  
+    <p-checkbox id="sea" name="sea">sea</p-checkbox>
+    <p-checkbox id="river" name="river">river</p-checkbox>
+    <p-checkbox id="lake" name="lake">lake</p-checkbox>
+
 
   </div>
 </template>

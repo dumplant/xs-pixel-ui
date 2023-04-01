@@ -1,9 +1,12 @@
-import BaseCard from "./card";
+import PixelCard from "./card";
 import PixelButton from "./button";
+import PixelCheckbox from "./checkbox";
+
 
 const components = {
-  BaseCard,
-  PixelButton
+  PixelCard,
+  PixelButton,
+  PixelCheckbox,
 };
 const install = function (Vue) {
   if (install.installed) {
